@@ -70,10 +70,8 @@ body {
     padding: 20px 50px;
     color: white;
     text-align: center;
-    margin-top: 900px;
+    margin-top: 500px;
 }
-
-
 
 .footer-section {
     flex: 1;
@@ -109,4 +107,5 @@ body {
     color: #fdfdfd; /* Color dorado */
     
 }
+
 
