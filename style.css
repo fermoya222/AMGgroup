@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navbar {
@@ -9,6 +9,7 @@ body {
     align-items: center;
     background-color: #000;
     padding: 15px 40px;
+    
 }
 
 .logo {
@@ -72,17 +73,20 @@ body {
     margin-top: 900px;
 }
 
+
+
 .footer-section {
     flex: 1;
 }
 
 .footer-section.logo img {
     width: 120px; /* Ajusta según el tamaño del logo */
+    margin-top: 20px;
     
 }
 
 .footer-section p {
-    margin: 5px 0;
+    margin-top: 15px;
     font-size: 14px;
 }
 
