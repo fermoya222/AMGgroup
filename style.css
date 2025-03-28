@@ -1,4 +1,11 @@
 /* styles.css */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
@@ -70,7 +77,7 @@ body {
     padding: 20px 50px;
     color: white;
     text-align: center;
-    margin-top: 500px;
+    
 }
 
 .footer-section {
@@ -108,4 +115,193 @@ body {
     
 }
 
+.hero {
+    text-align: center;
+    background-color: black;
+}
 
+.hero img{
+    width: 100%;
+    height: 1000px;
+}
+
+
+/* Información general */
+.informacion {
+    background-color: #222222;
+    color: #fdfdfd;
+    text-align: center;
+    position: relative;  /* Relativo para que el texto de fondo sea absoluto dentro */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.texto-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    font-size: 300px;  /* Tamaño grande */
+    font-weight: bold;
+    color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
+    z-index: 0; /* Lo envía al fondo */
+    white-space: nowrap; /* Evita que el texto se divida */
+    user-select: none; /* Evita que el usuario lo seleccione */
+}
+
+.informacion p{
+   font-size: 50px;
+   margin: 0 70px 70px;
+}
+
+.resaltado {
+    color: gold;
+    font-weight: bold;
+}
+
+.numeros-container {
+    text-align: center;
+}
+
+.numeros-container h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.numeros-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 10px;
+}
+/* Números */
+.numeros {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #222222;
+}
+
+/* Cada número */
+.numeros div {
+    text-align: center;
+}
+
+.numeros h3 {
+    font-size: 70px;
+    font-weight: bold;
+    color: gold;
+    margin: 0 70px 70px;
+}
+
+.numeros p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: -50px;
+}
+
+.countainer{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   min-height: 90vh;
+   background-color: black;
+   font-family: "Montserrat", sans-serif;
+}
+
+.titulo-jugadores {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: gold;
+    margin: -20px 70px 50px;
+    text-transform: uppercase;
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 15px;
+}
+
+.jugadores-tit{
+    font-size: 70px;
+    font-weight: bold;
+    color: gold;
+}
+
+.card-list .card-item {
+   color: white;
+   user-select: none;
+   width: 400px;
+   padding: 35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 20px;
+   background-color: #21201f;
+   border: 3px solid yellow;
+}
+
+
+.card-list .card-item .user-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .user-from{
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 500;
+    margin-top: -35px;
+}
+
+.card-list .card-item .message-button{
+   font-size: 1.25rem;
+   padding: 10px 35px;
+   color: rgb(4, 21, 116);
+   background: #fff;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: 500;
+   border: 1px solid transparent;
+   transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff ;
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+   background: #fff;
+   height: 15px;
+   width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -370px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #c8d606;
+    
+}
