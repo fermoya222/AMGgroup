@@ -57,7 +57,7 @@ body {
 
 .contact-button {
     background-color: #e1b73b;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 20px;
@@ -122,7 +122,7 @@ body {
 
 .hero img{
     width: 100%;
-    height: 1000px;
+    height: 800px;
 }
 
 
@@ -155,7 +155,7 @@ body {
 }
 
 .resaltado {
-    color: gold;
+    color: #e1b73b;
     font-weight: bold;
 }
 
@@ -173,7 +173,7 @@ body {
 .numeros-container h2 {
     font-size: 20px;
     font-weight: bold;
-    color: gold;
+    color: #e1b73b;
     margin-bottom: 10px;
 }
 /* Números */
@@ -192,7 +192,7 @@ body {
 .numeros h3 {
     font-size: 70px;
     font-weight: bold;
-    color: gold;
+    color: #e1b73b;
     margin: 0 70px 70px;
 }
 
@@ -217,7 +217,7 @@ body {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: gold;
+    color: #e1b73b;
     margin: -20px 70px 50px;
     text-transform: uppercase;
 }
@@ -231,7 +231,7 @@ body {
 .jugadores-tit{
     font-size: 70px;
     font-weight: bold;
-    color: gold;
+    color: #e1b73b;
 }
 
 .card-list .card-item {
@@ -245,7 +245,7 @@ body {
    justify-content: center;
    border-radius: 20px;
    background-color: #21201f;
-   border: 3px solid yellow;
+   border: 4px solid #d1a234;
 }
 
 
@@ -272,21 +272,19 @@ body {
 }
 
 .card-list .card-item .message-button{
-   font-size: 1.25rem;
-   padding: 10px 35px;
-   color: rgb(4, 21, 116);
-   background: #fff;
-   border-radius: 5px;
+   padding: 10px 20px;
+   color: rgb(255, 255, 255);
+   background-color: #e1b73b;
+   border-radius: 10px;
    cursor: pointer;
    font-weight: 500;
    border: 1px solid transparent;
    transition: 0.2s ease;
+   margin-top: 10px;
 }
 
 .card-list .card-item .message-button:hover{
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #fff ;
-    color: #fff;
+    background-color: #d1a234;
 }
 
 .slider-wrapper .swiper-pagination-bullet{
@@ -297,11 +295,24 @@ body {
 
 .slider-wrapper .swiper-slide-button{
     color: #fff;
-    margin-top: -370px;
+    margin-top: -410px;
     transition: 0.2s ease;
 }
 
 .slider-wrapper .swiper-slide-button:hover{
-    color: #c8d606;
-    
+    color: #d1a234;
+}
+
+.btnjug{
+    margin-top: 25px;
+    background-color: #e1b73b;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.btnjug:hover {
+    background-color: #d1a234;
 }
