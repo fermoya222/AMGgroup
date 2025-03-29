@@ -5,21 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMG Group</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="img/logo.png" rel="shortcut icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
 </head>
 <body>
     <!-- MENU -->
     <nav class="navbar" id="idMenu"></nav>
     
+    <!-- form -->
+     <div class="body">
+        <div class="container222">
+            <div class="info">
+                <h3>Localización</h3>
+                <h2>OFICINAS</h2>
+                <img src="img/mapa.png" alt="Ubicación" class="mapa">
+                <p><strong>Horario</strong><br>De Martes a Domingo, de 8:00h a 23:00h.</p>
+                <p><strong>Dirección</strong><br>Duarte Quirós 1300, Córdoba - Argentina</p>
+                <p><strong>Teléfono</strong><br>3515 19-8060 / 3516 32-3650</p>
+                <p><strong>Email</strong><br><a href="mailto:groupamg.info@gmail.com">groupamg.info@gmail.com</a></p>
+                <p><strong>Redes sociales</strong><br><a href="#">@amg_group</a></p>
+            </div>
 
+            <div class="formulario">
+                <h2>CONSULTAS</h2>
+                <p>Si querés ser representado y tenés alguna duda, consultanos acá.</p>
+                <form action="#" method="post">
+                    <input type="text" name="tipo" placeholder="Soy futbolista / Soy dt" required>
+                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                    <input type="email" name="email" placeholder="Mail" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                    <textarea name="consulta" placeholder="Consulta" required></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </div>
     
          
     <!-- FOOTER -->
-    <footer class="footer" id="idFooter"></footer>
 </body>
 <script type="module" src="js/navFooter.js"></script>
 
