@@ -59,7 +59,7 @@ body {
 }
 
 .info a {
-    color: #cfb06c;
+    color: #e1b73b;
     text-decoration: none;
 }
 
@@ -104,13 +104,13 @@ textarea {
 }
 
 textarea {
-    height: 80px;
+    height: 200px;
     resize: none;
 }
 
 button {
-    background-color: #cfb06c;
-    color: #000000;
+    background-color: #e1b73b;
+    color: #ffffff;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -121,7 +121,7 @@ button {
 }
 
 button:hover {
-    background-color: #b8955a;
+    background-color: #d1a234;
 }
 
 /* Responsivo */

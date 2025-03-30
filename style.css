@@ -166,13 +166,13 @@ body {
 .numeros-container h3 {
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-top: 10px;
 }
 
 .numeros-container h2 {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     color: #e1b73b;
     margin-bottom: 10px;
 }
@@ -203,13 +203,30 @@ body {
     margin-top: -50px;
 }
 
+@keyframes aparecer{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.ocultar{
+    opacity: 0;
+}
+
+.animar{
+    animation: aparecer 3s ;
+    opacity: 1;
+}
+
 .countainer{
     display: flex;
    align-items: center;
    justify-content: center;
    flex-direction: column;
    min-height: 90vh;
-   background-color: black;
+   background-color: #111111;
    font-family: "Montserrat", sans-serif;
 }
 
@@ -243,7 +260,7 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   border-radius: 20px;
+   border-radius: 35px;
    background-color: #21201f;
    border: 4px solid #d1a234;
 }
@@ -253,21 +270,21 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 4px;
 }
 
 .card-list .card-item .user-profession{
     font-size: 1.15rem;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     margin: 14px 0 40px;
 }
 
 .card-list .card-item .user-from{
     font-size: 1.15rem;
     color: white;
-    font-weight: 500;
+    font-weight: 300;
     margin-top: -35px;
 }
 
@@ -304,10 +321,10 @@ body {
 }
 
 .btnjug{
-    margin-top: 25px;
+    margin-top: 40px;
     background-color: #e1b73b;
     color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     text-decoration: none;
     border: 1px solid rgb(0, 0, 0);
