@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="footer-section address">
             <p><strong>DUARTE QUIRÓS 1300, CÓRDOBA - ARGENTINA</strong></p>
             <div class="social-icons">
-                <a href="#"><img src="img/ig.png" width="29" alt="logo-ig"></a>
+                <a href="https://www.instagram.com/amggroup.ok/"><img src="img/ig.png" width="29" alt="logo-ig"></a>
                 <a href="#"><img class="" src="img/wsp.png" width="29" alt="logo-wsp"></a>
                 <a href="#"><img class="" src="img/maps.png" width="29" alt="logo-maps"></a>
             </div>
