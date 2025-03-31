@@ -53,10 +53,10 @@ body {
 
 .texto-fondo {
   position: absolute;
-  top: 110%;
+  top: 145%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el texto */
-  font-size: 250px;  /* Tamaño grande */
+  font-size: 240px;  /* Tamaño grande */
   font-weight: bold;
   color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
   z-index: 0; /* Lo envía al fondo */
@@ -68,7 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
-  font-size: 50px;
+  font-size: 40px;
   margin: 250px 0px 50px;
 }
 
@@ -84,15 +84,21 @@ details {
     overflow: hidden;
     margin: 0 70px 40px;
 }
-  
-  /* don't add margin/padding to this, add it to the actual
-     stuff inside the details content */
+
+
+/* don't add margin/padding to this, add it to the actual
+stuff inside the details content */
 details::details-content {
     color: hsl(0, 0%, 0%);
     font-size: 1rem;
     block-size: 0;
     transition: block-size 1s, content-visibility 0.8s;
     transition-behavior: allow-discrete;
+}
+
+details > p {
+  color: white; /* Texto desplegable en blanco */
+  margin-top: 10px; /* Margen superior de 10px */
 }
   
 details:open::details-content {
@@ -144,9 +150,46 @@ details:open::details-content {
       margin-inline-start: 1rem;
       list-style-position: outside;
     }
+    summary {
+      font-weight: bold; /* Título en negrita */
+      list-style: none; /* Eliminar la flecha predeterminada */
+      margin-inline-start: 0; /* Ajustar el margen izquierdo */
+    }
   
     summary::marker {
       font-size: 1em;
       color: hsl(0, 0%, 0%);
     }
+
+    summary::after {
+      content: "v" ; /* Flecha en forma de V */
+      color: white; /* Color blanco */
+      font-size: 1rem; /* Tamaño reducido de la flecha */
+      margin-left: 10px; /* Espacio entre el texto y la flecha */
+      float: right; /* Mover la flecha al lado derecho */
+    }
+  
+  
 }
+
+/* img */
+.imagenes {
+  margin: 50px 0;
+  text-align: center; /* Centra las imágenes */
+}
+
+.imagenes-container {
+  display: grid; /* Usamos grid para la distribución */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* Espacio entre las imágenes */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.imagen {
+  width: 100%; /* Las imágenes se ajustan al contenedor */
+  height: 290px; /* Establecemos una altura uniforme para todas las imágenes */
+  object-fit: cover; /* Las imágenes se recortan si es necesario para llenar el contenedor */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+}
+
