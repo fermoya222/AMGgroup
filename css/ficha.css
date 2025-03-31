@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    max-width: 900px;
     background-color: #111111;
     padding: 30px;
     border-radius: 10px;
@@ -140,4 +140,12 @@ button:hover {
     }
 }
 
- 
+
+/* foto */
+
+/* .slider-wrap{
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 70px 15px;
+    margin-top: 50px;
+} */
