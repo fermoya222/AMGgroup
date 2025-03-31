@@ -1,0 +1,152 @@
+body {
+    background-color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 10px;
+    object-fit: cover;
+    filter: brightness(50%);
+    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 10px;
+}
+
+.texto-fondo {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  font-size: 250px;  /* Tamaño grande */
+  font-weight: bold;
+  color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
+  z-index: 0; /* Lo envía al fondo */
+  white-space: nowrap; /* Evita que el texto se divida */
+  user-select: none; /* Evita que el usuario lo seleccione */
+}
+.section-title{
+  background-color:#222222;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 50px;
+  margin: 250px 0px 50px;
+}
+
+:root {
+    interpolate-size: allow-keywords;
+}
+  
+details {
+    background: #e1b73b;
+    border: 1px solid hsl(0, 0%, 0%);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 70px 40px;
+}
+  
+  /* don't add margin/padding to this, add it to the actual
+     stuff inside the details content */
+details::details-content {
+    color: hsl(0, 0%, 0%);
+    font-size: 1rem;
+    block-size: 0;
+    transition: block-size 1s, content-visibility 0.8s;
+    transition-behavior: allow-discrete;
+}
+  
+details:open::details-content {
+    block-size: auto;
+}
+  
+  @layer general-styling {
+    html {
+      font-family: system-ui;
+      color-scheme: dark;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    details,
+    summary {
+      margin-block-end: 0;
+    }
+  
+    .page-layout {
+      display: grid;
+      grid-template-columns:
+        minmax(2rem, 1fr)
+        min(960px, 100% - 4rem)
+        minmax(2rem, 1fr);
+  
+      & > * {
+        grid-column: 2 / 3;
+      }
+  
+      margin-block: 5rem;
+      container-type: inline-size;
+      container-name: page-layout;
+    }  
+    details * {
+      margin: 0;
+    }
+  
+    details > p {
+      padding-block: 1rem;
+    }
+  
+    summary {
+      color: hsl(0, 0%, 100%);
+      line-height: 1.3;
+      margin-inline-start: 1rem;
+      list-style-position: outside;
+    }
+  
+    summary::marker {
+      font-size: 1em;
+      color: hsl(0, 0%, 0%);
+    }
+}
