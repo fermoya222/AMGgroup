@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
      <footer class="footer" id="idFooter">
 
         <div class="footer-section logo">
-            <img src="img/amg.png" alt="AMG Group Logo">
+            <img src="../img/amg.png" alt="AMG Group Logo">
         </div>
         <div class="footer-section contact-info">
             <p><strong>GROUPAMG.INFO@GMAIL.COM</strong></p>
