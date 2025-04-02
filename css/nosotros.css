@@ -7,7 +7,7 @@ body {
 }
 
 .body {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -53,13 +53,26 @@ body {
 
 .texto-fondo {
   position: absolute;
-  top: 145%;
+  top: 105%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el texto */
   font-size: 240px;  /* Tamaño grande */
   font-weight: bold;
   color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
   z-index: 0; /* Lo envía al fondo */
+  white-space: nowrap; /* Evita que el texto se divida */
+  user-select: none; /* Evita que el usuario lo seleccione */
+}
+
+.texto-fondo1 {
+  position: absolute;
+  top: 185%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el texto */
+  font-size: 240px;  /* Tamaño grande */
+  font-weight: bold;
+  color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
+  z-index: -1; /* Lo envía al fondo */
   white-space: nowrap; /* Evita que el texto se divida */
   user-select: none; /* Evita que el usuario lo seleccione */
 }
@@ -77,12 +90,14 @@ body {
 }
   
 details {
-    background: #e1b73b;
-    border: 1px solid hsl(0, 0%, 0%);
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 0 70px 40px;
+  background: #e1b73b;
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto 40px;
+  width: 80%;
+  max-width: 1200px;
 }
 
 
@@ -174,16 +189,20 @@ details:open::details-content {
 
 /* img */
 .imagenes {
-  margin: 50px 0;
+  margin-top: 295PX;
+  margin-bottom: 50px;
+  /* margin: 50px 0; */
   text-align: center; /* Centra las imágenes */
 }
 
 .imagenes-container {
+
   display: grid; /* Usamos grid para la distribución */
   grid-template-columns: repeat(3, 1fr); /* 3 columnas */
   gap: 20px; /* Espacio entre las imágenes */
   max-width: 1200px; /* Ancho máximo del contenedor */
   margin: 0 auto; /* Centra el contenedor */
+
 }
 
 .imagen {
