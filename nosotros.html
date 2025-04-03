@@ -1,76 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMG Group</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="img/logo.png" rel="shortcut icon" />
-    <link rel="stylesheet" href="css/nosotros.css">
-</head>
-<body>
-    <nav class="navbar" id="idMenu"></nav>
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <style>
+    /* Estilo para el fondo del modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
 
-    <header class="hero">
-        <img src="img/025.jpeg" alt="Grupo de personas" class="hero-image">
-        <div class="hero-overlay">
-            <h1 class="hero-title">NUESTRA PROYECCIÓN</h1>
-            <p class="hero-text">Expandimos las oportunidades de nuestros deportistas a nivel global, asegurando acuerdos estratégicos y alianzas que impulsen sus carreras al siguiente nivel.</p>
-        </div>
+    /* Imagen ampliada dentro del modal */
+    .modal-content {
+      max-width: min-content;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Cerrar el modal */
+    .close-modal {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+    }
+    .logo {
+      margin-top: 0px !important;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="idMenu"></nav>
+
+    <header class="hero text-center">
+      <img
+        src="img/025.jpeg"
+        alt="Grupo de personas"
+        class="hero-image img-fluid"
+      />
+      <div class="hero-overlay">
+        <h1 class="hero-title">NUESTRA PROYECCIÓN</h1>
+        <p class="hero-text">
+          Expandimos las oportunidades de nuestros deportistas a nivel global,
+          asegurando acuerdos estratégicos y alianzas que impulsen sus carreras.
+        </p>
+      </div>
     </header>
 
-    <section class="faq">
-      <div class="section-title">
-        <div class="texto-fondo">BENEFICIOS</div> <!-- Texto de fondo -->
-        <h2>DE NUESTRO ACOMPAÑAMIENTO</h2>
+    <section class="faq container py-5">
+      <div class="section-title text-center">
+        <div class="texto-fondo">BENEFICIOS</div>
+        <h2 class="letraAMG">DE NUESTRO ACOMPAÑAMIENTO</h2>
       </div>
-        <details>
-          <summary>KINESIOLOGIA</summary>
-          <p>Los jugadores cuentan con el apoyo del kinesiólogo Hugo Mansilla, quien se encarga de su recuperación, prevención de lesiones y óptimo rendimiento físico.
-          </p>
-        </details>
-  
-        <details>
-          <summary>NUTRICIÓN</summary>
-          <p>La importancia de la nutrición para los jugadores de fútbol es fundamental para optimizar su rendimiento físico y mental, ayudándolos a maximizar su potencial a través de una dieta adecuada que equilibre los nutrientes esenciales que el cuerpo necesita. Por ello, cuentan con el acompañamiento de un nutricionista, quien planifica una alimentación personalizada para mejorar su desempeño, acelerar la recuperación y mantener un estado físico óptimo.</p>
-        </details>
-  
-        <details>
-          <summary>PERSONAL TRAINNER</summary>
-          <p>Contamos con un entrenador personal, Martín Duhart, quien trabaja con los jugadores para ayudarles a alcanzar su máximo potencial y mantener un óptimo estado físico y mental. Su rol es clave en la preparación personalizada y el rendimiento deportivo.</p>
-        </details>
-  
-        <details>
-          <summary>ESTUDIOS</summary>
-          <p>Contamos con una alianza estratégica con la Universidad Blas Pascal, lo que nos permite ofrecer a los jugadores acceso a programas educativos y de formación continua. Este convenio fortalece nuestro compromiso con el desarrollo integral de los deportistas, promoviendo su crecimiento tanto en lo académico como en lo deportivo.</p>
-        </details>
-      </div>
+
+      <details ontoggle="toggleIcon(this)">
+        <summary class="letraAMG">KINESIOLOGIA <span>&#709;</span></summary>
+        <p>
+          Los jugadores cuentan con el apoyo del kinesiólogo Hugo Mansilla,
+          quien se encarga de su recuperación, prevención de lesiones y óptimo
+          rendimiento físico.
+        </p>
+      </details>
+
+      <details ontoggle="toggleIcon(this)">
+        <summary class="letraAMG">NUTRICIÓN<span>&#709;</span></summary>
+        <p>
+          La importancia de la nutrición para los jugadores de fútbol es
+          fundamental para optimizar su rendimiento físico y mental, ayudándolos
+          a maximizar su potencial a través de una dieta adecuada que equilibre
+          los nutrientes esenciales que el cuerpo necesita. Por ello, cuentan
+          con el acompañamiento de un nutricionista, quien planifica una
+          alimentación personalizada para mejorar su desempeño, acelerar la
+          recuperación y mantener un estado físico óptimo.
+        </p>
+      </details>
+
+      <details ontoggle="toggleIcon(this)">
+        <summary class="letraAMG">
+          PERSONAL TRAINNER <span>&#709;</span>
+        </summary>
+        <p>
+          Contamos con un entrenador personal, Martín Duhart, quien trabaja con
+          los jugadores para ayudarles a alcanzar su máximo potencial y mantener
+          un óptimo estado físico y mental. Su rol es clave en la preparación
+          personalizada y el rendimiento deportivo.
+        </p>
+      </details>
+
+      <details ontoggle="toggleIcon(this)">
+        <summary class="letraAMG">ESTUDIOS <span>&#709;</span></summary>
+        <p>
+          Contamos con una alianza estratégica con la Universidad Blas Pascal,
+          lo que nos permite ofrecer a los jugadores acceso a programas
+          educativos y de formación continua. Este convenio fortalece nuestro
+          compromiso con el desarrollo integral de los deportistas, promoviendo
+          su crecimiento tanto en lo académico como en lo deportivo.
+        </p>
+      </details>
     </section>
 
-    <div class="texto-fondo1">AMGGROUP</div> <!-- Texto de fondo -->
-
-    <section class="imagenes">
-        <div class="imagenes-container">
-            <img src="img/img1.png" alt="Imagen 1" class="imagen">
-            <img src="img/img2.png" alt="Imagen 2" class="imagen">
-            <img src="img/img3.png" alt="Imagen 3" class="imagen">
-            <img src="img/img4.png" alt="Imagen 4" class="imagen">
-            <img src="img/img5.png" alt="Imagen 5" class="imagen">
-            <img src="img/img6.png" alt="Imagen 6" class="imagen">
-            <img src="img/img7.png" alt="Imagen 7" class="imagen">
-            <img src="img/img8.png" alt="Imagen 8" class="imagen">
-            <img src="img/img9.png" alt="Imagen 9" class="imagen">
+    <div class="texto-fondo1 text-center">AMGGROUP</div>
+    <section class="imagenes container py-5" style="margin-top: 65px">
+      <div class="row g-3">
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img1.png"
+            alt="Imagen 1"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
         </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img2.png"
+            alt="Imagen 2"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img3.png"
+            alt="Imagen 3"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img4.png"
+            alt="Imagen 4"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img5.png"
+            alt="Imagen 5"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img6.png"
+            alt="Imagen 6"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img7.png"
+            alt="Imagen 7"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img8.png"
+            alt="Imagen 8"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <img
+            src="img/img9.png"
+            alt="Imagen 9"
+            class="img-fluid imagen"
+            onclick="ampliarImagen(this)"
+          />
+        </div>
+      </div>
     </section>
-    
-   
-    <!-- FOOTER -->
-    <footer class="footer" id="idFooter"></footer>
-</body>
-<script type="module" src="js/navFooter.js"></script>
-<script src="js/summary.js"></script>
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+      <span class="close-modal" onclick="cerrarModal()">&times;</span>
+      <img id="modal-img" class="modal-content" />
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="js/navFooter.js"></script>
+    <script>
+      function toggleIcon(details) {
+        const icon = details.querySelector("summary span");
+        icon.innerHTML = details.open ? "&#708;" : "&#709;";
+      }
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("show");
+      }
+      function ampliarImagen(img) {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+      }
+
+      function cerrarModal() {
+        document.getElementById("modal").style.display = "none";
+      }
+
+      // Cerrar modal si se hace clic fuera de la imagen
+      document
+        .getElementById("modal")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            cerrarModal();
+          }
+        });
+    </script>
+  </body>
 </html>

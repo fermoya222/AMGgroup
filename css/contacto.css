@@ -1,144 +1,154 @@
 /* Estilos generales */
 body {
-    background-color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+  background-color: #222222;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .body {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
 .container222 {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    max-width: 900px;
-    background-color: #111111;
-    padding: 30px;
-    border-radius: 10px;
-    gap: 20px;
-    width: 90%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;  /* Márgenes superior e inferior */
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 100%;
+  background-color: #111111;
+  padding: 30px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 90%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
- 
 
 /* Información de contacto */
 .info {
-    width: 45%;
-    text-align: left; /* Asegura que el texto se alinee correctamente */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 45%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .info h3 {
-    font-size: 16px;
-    color: #cccccc;
-    margin-bottom: 5px;
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 5px;
 }
 
 .info h2 {
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .info p {
-    font-size: 14px;
-    line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .info a {
-    color: #e1b73b;
-    text-decoration: none;
+  color: #e1b73b;
+  text-decoration: none;
 }
 
 .mapa {
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 /* Formulario */
 .formulario {
-    width: 50%;
+  width: 50%;
 }
 
 .formulario h2 {
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .formulario p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #cccccc;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #cccccc;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #333333;
-    border: 1px solid #444444;
-    color: #ffffff;
-    border-radius: 5px;
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #333333;
+  border: 1px solid #444444;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 textarea {
-    height: 200px;
-    resize: none;
+  height: 200px;
+  resize: none;
 }
 
 button {
-    background-color: #e1b73b;
-    color: #ffffff;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
+  background-color: #e1b73b;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #d1a234;
+  background-color: #d1a234;
 }
 
 /* Responsivo */
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .container222 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+  }
 
-    .info, .formulario {
-        width: 100%;
-    }
+  .info,
+  .formulario {
+    width: 100%;
+  }
 
-    .info {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  .info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px; /* Reduce el tamaño del mapa */
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+  }
 }
-
- 

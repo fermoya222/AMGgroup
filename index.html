@@ -1,112 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMG Group</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="img/logo.png" rel="shortcut icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      margin: 4px !important;
+      font-family: "Montserrat", sans-serif !important;
+      /* font-size: inherit; */
+      /* line-height: inherit; */
+    }
+  </style>
+  <body>
     <!-- MENU -->
     <nav class="navbar" id="idMenu"></nav>
-   
+
     <section class="hero">
-        <img src="img/soccer-stadium-night (1).jpg" alt="Imagen del estadio">
+      <img src="img/soccer-stadium-night (1).jpg" alt="Imagen del estadio" />
     </section>
 
     <div class="container swiper">
-        <div class="countainer">
-            <h2 class="titulo-jugadores">JUGADORES</h2>
-            <div class="slider-wrapper">
-                <div class="card-list swiper-wrapper">
-                    <div class="card-item swiper-slide">
-                        <img src="img/jugador1.png" alt="JUAN HERRERA" class="user-image">
-                        <img src="img/2371641-middle-removebg-preview.png"  height="60px" alt="">
-                        <h2 class="user-name">JUAN HERRERA</h2>
-                        <p class="user-profession">Belgrano</p>
-                        <p class="user-from">Argentina</p>
-                        <button class="message-button">VER FICHA</button>
-                    </div>
-    
-                    <div class="card-item swiper-slide">
-                        <img src="img/bono.png" alt="AGUSTÍN BONO" class="user-image">
-                        <img src="img/2371641-middle-removebg-preview.png" width="60px" height="60px" alt="">
-                        <h2 class="user-name">AGUSTÍN BONO</h2>
-                        <p class="user-profession">Belgrano</p>
-                        <p class="user-from">Argentina</p>
-                        <button class="message-button">VER FICHA</button>
-                    </div>
-    
-                    <div class="card-item swiper-slide">
-                        <img src="img/garay.png" alt="KEVIN GARAY" class="user-image">
-                        <img src="img/2371641-middle-removebg-preview.png" width="60px" height="60px" alt="">
-                        <h2 class="user-name">KEVIN GARAY</h2>
-                        <p class="user-profession">Belgrano</p>
-                        <p class="user-from">Argentina</p>
-                        <button class="message-button">VER FICHA</button>
-                    </div>
-    
-                    <div class="card-item swiper-slide">
-                        <img src="img/luna.png" alt="THIAGO LUNA" class="user-image">
-                        <img src="img/2371641-middle-removebg-preview.png" width="60px" height="60px" alt="">
-                        <h2 class="user-name">THIAGO LUNA</h2>
-                        <p class="user-profession">Belgrano</p>
-                        <p class="user-from">Argentina</p>
-                        <button class="message-button">VER FICHA</button>
-                    </div>
-                    
-                </div>
-    
-                
-                <!-- <div class="swiper-pagination"></div> -->
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
+      <div class="countainer">
+        <h2 class="titulo-jugadores">JUGADORES</h2>
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img
+                src="img/jugador1.png"
+                alt="JUAN HERRERA"
+                class="user-image"
+              />
+              <img
+                src="img/2371641-middle-removebg-preview.png"
+                height="60px"
+                alt=""
+              />
+              <h2 class="user-name">JUAN HERRERA</h2>
+              <p class="user-profession">Belgrano</p>
+              <p class="user-from">Argentina</p>
+              <button class="message-button">VER FICHA</button>
             </div>
-            <button class="btnjug">VER JUGADORES</button>
-        </div>
-    </div>        
 
+            <div class="card-item swiper-slide">
+              <img src="img/bono.png" alt="AGUSTÍN BONO" class="user-image" />
+              <img
+                src="img/2371641-middle-removebg-preview.png"
+                width="60px"
+                height="60px"
+                alt=""
+              />
+              <h2 class="user-name">AGUSTÍN BONO</h2>
+              <p class="user-profession">Belgrano</p>
+              <p class="user-from">Argentina</p>
+              <button class="message-button">VER FICHA</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="img/garay.png" alt="KEVIN GARAY" class="user-image" />
+              <img
+                src="img/2371641-middle-removebg-preview.png"
+                width="60px"
+                height="60px"
+                alt=""
+              />
+              <h2 class="user-name">KEVIN GARAY</h2>
+              <p class="user-profession">Belgrano</p>
+              <p class="user-from">Argentina</p>
+              <button class="message-button">VER FICHA</button>
+            </div>
+
+            <div class="card-item swiper-slide">
+              <img src="img/luna.png" alt="THIAGO LUNA" class="user-image" />
+              <img
+                src="img/2371641-middle-removebg-preview.png"
+                width="60px"
+                height="60px"
+                alt=""
+              />
+              <h2 class="user-name">THIAGO LUNA</h2>
+              <p class="user-profession">Belgrano</p>
+              <p class="user-from">Argentina</p>
+              <button class="message-button">VER FICHA</button>
+            </div>
+          </div>
+
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+        <button class="btnjug">VER JUGADORES</button>
+      </div>
+    </div>
 
     <section class="informacion">
-        <div class="texto-fondo">AMGROUP</div> <!-- Texto de fondo -->
-        <p>
-            Representamos deportistas basándonos en la <span class="resaltado">protección</span>, 
-            acompañamiento y crecimiento de cada uno de ellos. 
-            Fomentando la <span class="resaltado">educación</span>, hábitos saludables y el respeto.
-        </p>
-        <div class="numeros-container">
-            <h2>¿Por qué confiar en nosotros?</h2>
-            <h3>Nuestros números</h3>
-            <div class="numeros">
-                <div class="contador ocultar">
-                    <h3 class="contador_cantidad" data-cantidad-total="10">0</h3>
-                    <p>Jugadores en base</p>
-                </div>
-                <div class="contador ocultar">
-                    <h3 class="contador_cantidad" data-cantidad-total="34">0</h3>
-                    <p>Clubes vinculados</p>
-                </div>
-                <div class="contador ocultar">
-                    <h3 class="contador_cantidad" data-cantidad-total="70">0</h3>
-                    <p>Clubes contactados</p>
-                </div>
-            </div>
+      <div class="texto-fondo">AMGROUP</div>
+      <!-- Texto de fondo -->
+      <p>
+        Representamos deportistas basándonos en la
+        <span class="resaltado">protección</span>, acompañamiento y crecimiento
+        de cada uno de ellos. Fomentando la
+        <span class="resaltado">educación</span>, hábitos saludables y el
+        respeto.
+      </p>
+      <div class="numeros-container">
+        <h2>¿Por qué confiar en nosotros?</h2>
+        <h3>Nuestros números</h3>
+        <div class="numeros">
+          <div class="contador ocultar">
+            <h3 class="contador_cantidad" data-cantidad-total="10">0</h3>
+            <p>Jugadores en base</p>
+          </div>
+          <div class="contador ocultar">
+            <h3 class="contador_cantidad" data-cantidad-total="34">0</h3>
+            <p>Clubes vinculados</p>
+          </div>
+          <div class="contador ocultar">
+            <h3 class="contador_cantidad" data-cantidad-total="70">0</h3>
+            <p>Clubes contactados</p>
+          </div>
         </div>
+      </div>
     </section>
 
-
     <!-- FOOTER -->
-</body>
-<script type="module" src="js/navFooter.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="js\script.js"></script>
-<script src="js/animar.js"></script>
-
+  </body>
+  <script type="module" src="js/navFooter.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js\script.js"></script>
+  <script src="js/animar.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+  </script>
 </html>

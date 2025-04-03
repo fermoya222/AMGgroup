@@ -1,58 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMG Group</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link href="img/logo.png" rel="shortcut icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/nosotros.css" />
+    <style>
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        margin: 4px !important;
+        font-family: "Montserrat", sans-serif !important;
+        /* font-size: inherit; */
+        /* line-height: inherit; */
+      }
+    </style>
+  </head>
 
-</head>
-<body>
+  <body>
     <!-- MENU -->
     <nav class="navbar" id="idMenu"></nav>
-    
+
     <!-- form -->
     <div class="body">
+      <section>
         <div class="container222">
-            <div class="info">
-                <h3>Localización</h3>
-                <h2>OFICINAS</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0308624157415!2d-64.20314639691688!3d-31.413275759253647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988237cc0001%3A0x4cceab0d9d4d1c1b!2sHotel%20Quinto%20Centenario!5e0!3m2!1ses-419!2sar!4v1743276839958!5m2!1ses-419!2sar" 
-                 width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" 
-                 referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-                <p><strong>Horario</strong><br>De Martes a Domingo, de 8:00h a 23:00h.</p>
-                <p><strong>Dirección</strong><br>Duarte Quirós 1300, Córdoba - Argentina</p>
-                <p><strong>Teléfono</strong><br>3515 19-8060 / 3516 32-3650</p>
-                <p><strong>Email</strong><br><a href="mailto:groupamg.info@gmail.com">groupamg.info@gmail.com</a></p>
-                <p><strong>Redes sociales</strong><br><a href="#">@amg_group</a></p>
-            </div>
+          <div class="info">
+            <h3>Localización</h3>
+            <h2>OFICINAS</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0308624157415!2d-64.20314639691688!3d-31.413275759253647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988237cc0001%3A0x4cceab0d9d4d1c1b!2sHotel%20Quinto%20Centenario!5e0!3m2!1ses-419!2sar!4v1743276839958!5m2!1ses-419!2sar"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+            <p>
+              <strong>Horario</strong><br />De Martes a Domingo, de 8:00h a
+              23:00h.
+            </p>
+            <p>
+              <strong>Dirección</strong><br />Duarte Quirós 1300, Córdoba -
+              Argentina
+            </p>
+            <p><strong>Teléfono</strong><br />3515 19-8060 / 3516 32-3650</p>
+            <p>
+              <strong>Email</strong><br /><a
+                href="mailto:groupamg.info@gmail.com"
+                >groupamg.info@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong>Redes sociales</strong><br /><a href="#">@amg_group</a>
+            </p>
+          </div>
 
-            <div class="formulario">
-                <h2>CONSULTAS</h2>
-                <p>Si querés ser representado y tenés alguna duda, consultanos acá.</p>
-                <form action="#" method="post">
-                    <input type="text" name="tipo" placeholder="Soy futbolista / Soy dt" required>
-                    <input type="text" name="nombre" placeholder="Nombre Completo" required>
-                    <input type="email" name="email" placeholder="Mail" required>
-                    <input type="tel" name="telefono" placeholder="Teléfono" required>
-                    <textarea name="consulta" placeholder="Consulta" required></textarea>
-                    <button type="submit">ENVIAR</button>
-                </form>
-            </div>
+          <div class="formulario">
+            <h2>CONSULTAS</h2>
+            <p>
+              Si querés ser representado y tenés alguna duda, consultanos acá.
+            </p>
+            <form action="#" method="post">
+              <input
+                type="text"
+                name="tipo"
+                placeholder="Soy futbolista / Soy dt"
+                required
+              />
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Nombre Completo"
+                required
+              />
+              <input type="email" name="email" placeholder="Mail" required />
+              <input
+                type="tel"
+                name="telefono"
+                placeholder="Teléfono"
+                required
+              />
+              <textarea
+                name="consulta"
+                placeholder="Consulta"
+                required
+              ></textarea>
+              <button type="submit">ENVIAR</button>
+            </form>
+          </div>
         </div>
+      </section>
     </div>
-    
-         
-    <!-- FOOTER -->
-</body>
-<script type="module" src="js/navFooter.js"></script>
 
+    <!-- FOOTER -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/navFooter.js"></script>
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+  </script>
 </html>
