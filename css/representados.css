@@ -1,9 +1,9 @@
 body {
-    background-color: #111;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding: 20px;
+    background-color: #222222;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 .titulo {
@@ -122,8 +122,9 @@ button:hover {
     border-radius: 35px;
     background-color: #21201f;
     border: 4px solid #d1a234;
+    /* margin-top: 200px; estooooo */
 }
-  
+
 .card-list .card-item .user-image {
     width: 300px;
     height: 300px;
@@ -161,4 +162,36 @@ button:hover {
   
 .card-list .card-item .message-button:hover {
     background-color: #d1a234;
+}
+
+.texto-fondo6 {
+    position: absolute;
+    z-index: -1;
+    top: 119%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
+    font-weight: bold;
+    color: rgba(71, 68, 68, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+    user-select: none;
+    max-width: 100vw; /* Evita el scroll horizontal */
+    overflow: hidden;
+}
+
+.texto-fondo7 {
+    position: absolute;
+    z-index: -1;
+    top: 119%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
+    font-weight: bold;
+    color: rgba(71, 68, 68, 0.1);
+    z-index: 0;
+    white-space: nowrap;
+    user-select: none;
+    max-width: 100vw; /* Evita el scroll horizontal */
+    overflow: hidden;
 }
