@@ -63,19 +63,12 @@ body {
   max-width: 100vw; /* Evita el scroll horizontal */
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  /* Para pantallas pequeñas */
-  .texto-fondo {
-    top: 105%;
-  }
-  .texto-fondo1 {
-    top: 190% !important;
-  }
-}
+
 .texto-fondo1 {
   position: absolute;
   z-index: -1;
-  top: 208%;
+  margin-top: -60px;
+  /* top: 240%; */
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(50px, 15vw, 240px); /* Se adapta al tamaño de la pantalla */
