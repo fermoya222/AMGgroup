@@ -1,98 +1,44 @@
 body {
     background-color: #222222;
+    color: white;
     font-family: "Montserrat", sans-serif;
-    color: #ffffff;
+    text-align: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
-.titulo {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.categoria {
-    font-size: 40px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, 0.1);
-    text-transform: uppercase;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-}
-
-.contenedor {
-    position: relative;
+.countainer1 {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 40px 0;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #111111;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.tarjeta {
-    background-color: #222;
-    border: 2px solid gold;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
-    padding: 15px;
-    position: relative;
+.slider-wrapper1 {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0;
 }
-
-.imagen {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.info h3 {
-    margin: 10px 0 5px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.info p {
-    font-size: 14px;
-    margin: 2px 0;
-}
-
-button {
-    background-color: gold;
-    color: black;
-    border: none;
-    padding: 8px 12px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #ffcc00;
-}
-
-/* .countainer {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 40px 0;
-} */
 
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuir bien las tarjetas */
+    align-items: center;
+    justify-content: center; /* Distribuir bien las tarjetas */
     gap: 20px; /* Espacio entre tarjetas */
-    max-width: 1400px; /* Asegurar que hay espacio para 3 tarjetas */
+    max-width: 1200px; /* Asegurar que hay espacio para 3 tarjetas */
     margin: auto;
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .card-item {
-    width: calc(33.33% - 20px); /* Para que entren exactamente 3 por fila */
+    width: 100%; /* Para que entren exactamente 3 por fila */
     max-width: 350px; /* Mantiene el tamaño */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
 }
@@ -105,7 +51,7 @@ button:hover {
 }
 
 /* Ajustes para pantallas pequeñas */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .card-item {
         width: 100%; /* Una tarjeta por fila */
     }
@@ -114,15 +60,14 @@ button:hover {
 .card-list .card-item {
     color: white;
     user-select: none;
-    width: 400px;
-    padding: 50px;
+    width: 350px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     position: relative;
     border-radius: 35px;
     background-color: #21201f;
     border: 4px solid #d1a234;
-    /* margin-top: 200px; estooooo */
 }
 
 .card-list .card-item .user-image {
@@ -167,7 +112,7 @@ button:hover {
 .texto-fondo6 {
     position: absolute;
     z-index: -1;
-    top: 119%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
@@ -180,10 +125,17 @@ button:hover {
     overflow: hidden;
 }
 
+@media (max-width: 768px) {
+    .texto-fondo6 {
+        top: 20%;
+        font-size: clamp(30px, 15vw, 100px); /* Más pequeño para móvil */
+    }
+}
+
 .texto-fondo7 {
     position: absolute;
     z-index: -1;
-    top: 119%;
+    top: 115%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
@@ -195,3 +147,109 @@ button:hover {
     max-width: 100vw; /* Evita el scroll horizontal */
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .texto-fondo7 {
+        top: 113%;
+        font-size: clamp(30px, 15vw, 100px); /* Tamaño más cómodo en móviles */
+    }
+}
+
+.card-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Distribuir bien las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px; /* Asegurar que hay espacio para 3 tarjetas */
+    margin: auto;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.card-item1 {
+    width: 100%; /* Para que entren exactamente 3 por fila */
+    max-width: 350px; /* Mantiene el tamaño */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .card-item1 {
+        width: calc(50% - 20px); /* Dos tarjetas por fila */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 800px) {
+    .card-item1 {
+        width: 100%; /* Una tarjeta por fila */
+    }
+}
+
+.card-list1 .card-item1 {
+    color: white;
+    user-select: none;
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 35px;
+    background-color: #21201f;
+    border: 4px solid #d1a234;
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+
+.card-list1 .card-item1 .user-image1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 4px;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+  
+.card-list1 .card-item1 .user-profession1 {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 700;
+    margin: 14px 0 40px;
+}
+  
+.card-list1 .card-item1 .user-from1 {
+    font-size: 1.15rem;
+    color: white;
+    font-weight: 300;
+    margin-top: -35px;
+}
+  
+.card-list1 .card-item1 .message-button1 {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #e1b73b;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+    margin-top: 10px;
+}
+  
+.card-list1 .card-item1 .message-button1:hover {
+    background-color: #d1a234;
+}
+
+
+@media (max-width: 768px) {  
+   
+    .card-item1{
+        margin: 0;
+    }
+
+    .card-list1 {
+        justify-content: center;
+    }
+}
+
