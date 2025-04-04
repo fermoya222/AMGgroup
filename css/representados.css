@@ -73,40 +73,41 @@ button:hover {
     background-color: #ffcc00;
 }
 
-.countainer {
+/* .countainer {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin: 40px 0;
-}
+} */
 
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centrar las tarjetas */
+    justify-content: space-between; /* Distribuir bien las tarjetas */
     gap: 20px; /* Espacio entre tarjetas */
-    max-width: 1200px; /* Ancho máximo */
-    margin: auto; /* Centrar en la pantalla */
+    max-width: 1400px; /* Asegurar que hay espacio para 3 tarjetas */
+    margin: auto;
 }
 
 .card-item {
-    width: calc(33.333% - 20px); /* Para que entren 3 por fila */
-    max-width: 400px; /* Evita que crezcan demasiado */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    width: calc(33.33% - 20px); /* Para que entren exactamente 3 por fila */
+    max-width: 350px; /* Mantiene el tamaño */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
 }
 
-/* Media Query para ajustar a pantallas pequeñas */
-@media (max-width: 900px) {
+/* Ajustes para pantallas medianas */
+@media (max-width: 1200px) {
     .card-item {
-        width: calc(50% - 20px); /* Dos por fila en pantallas medianas */
+        width: calc(50% - 20px); /* Dos tarjetas por fila */
     }
 }
 
-@media (max-width: 600px) {
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 800px) {
     .card-item {
-        width: 100%; /* Una por fila en móviles */
+        width: 100%; /* Una tarjeta por fila */
     }
 }
 
@@ -114,7 +115,7 @@ button:hover {
     color: white;
     user-select: none;
     width: 400px;
-    padding: 35px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -124,8 +125,8 @@ button:hover {
 }
   
 .card-list .card-item .user-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     margin-bottom: 10px;
     padding: 4px;
