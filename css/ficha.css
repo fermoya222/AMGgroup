@@ -17,7 +17,7 @@ body {
     display: flex;
   justify-content: center;
   align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
   margin: auto;
 }
 
@@ -33,16 +33,16 @@ body {
     width: 90%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-top: 50px;  /* Márgenes superior e inferior */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     color: #cccccc;
 }
 
 .texto-fondo8 {
     position: absolute;
-    top: 90%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centra el texto */
-    font-size: 300px;  /* Tamaño grande */
+    font-size: 250px;  /* Tamaño grande */
     font-weight: bold;
     color: rgba(71, 68, 68, 0.1); /* Color semi-transparente */
     z-index: 0; /* Lo envía al fondo */
@@ -52,7 +52,8 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo8 {
-      font-size: 0px; /* Ejemplo: reduces el tamaño en móviles */
+      font-size: 70px; /* Ejemplo: reduces el tamaño en móviles */
+      top: 145%;
     }
 }
 
@@ -63,10 +64,12 @@ body {
     flex-wrap: wrap;
     gap: 60px; /* Más separación */
    min-height: 90vh;
-   background-color: #222222;
+   background-color: #111111;
    font-family: "Montserrat", sans-serif;
    position: relative;
    overflow: hidden;
+   margin-bottom: 100px;
+   margin-top: 50px;
 }
 
 @media (max-width: 768px) {
