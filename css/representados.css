@@ -112,7 +112,7 @@ body {
 .texto-fondo6 {
     position: absolute;
     z-index: -1;
-    top: 17%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
@@ -135,7 +135,7 @@ body {
 .texto-fondo7 {
     position: absolute;
     z-index: -1;
-    top: 115%;
+    top: 153%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
@@ -150,7 +150,7 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo7 {
-        top: 113%;
+        top: 120%;
         font-size: clamp(30px, 15vw, 100px); /* Tamaño más cómodo en móviles */
     }
 }

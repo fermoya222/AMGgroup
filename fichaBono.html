@@ -6,6 +6,19 @@
     <title>AMG Group</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ficha.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +27,7 @@
 </head>
 <body>
    <!-- MENU -->
-   <nav class="navbar" id="idMenu"></nav>
+   <nav class="navbar navbar-expand-lg navbar-light" id="idMenu"></nav>
  
    <div class="countainer1">
             <div class="card-list1">
@@ -48,8 +61,35 @@
         </div>
     </div>      
 
-    <!-- FOOTER -->
 </body>
 <script type="module" src="js/navFooter.js"></script>
-
+<script>
+    function toggleIcon(details) {
+      const icon = details.querySelector("summary span");
+      icon.innerHTML = details.open ? "&#708;" : "&#709;";
+    }
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+    function ampliarImagen(img) {
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modal-img");
+  
+      modal.style.display = "flex";
+      modalImg.src = img.src;
+    }
+  
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  
+    // Cerrar modal si se hace clic fuera de la imagen
+    document
+      .getElementById("modal")
+      .addEventListener("click", function (event) {
+        if (event.target === this) {
+          cerrarModal();
+        }
+    });
+</script>
 </html>
