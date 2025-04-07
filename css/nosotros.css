@@ -199,6 +199,14 @@ details:open::details-content {
     padding-block: 1rem;
   }
 }
+
+
+@media (max-width: 480px) {
+  details{
+    list-style: none;
+  }
+}
+
 summary {
   cursor: pointer;
   font-size: 18px;
