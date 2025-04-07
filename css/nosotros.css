@@ -201,8 +201,8 @@ details:open::details-content {
 }
 
 
-@media (max-width: 480px) {
-  details{
+@media (max-width: 768px) {
+  summary{
     list-style: none;
   }
 }
