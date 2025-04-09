@@ -199,7 +199,10 @@ details:open::details-content {
     padding-block: 1rem;
   }
 }
+
+
 summary {
+  list-style: armenian;
   cursor: pointer;
   font-size: 18px;
   display: flex;
@@ -209,6 +212,13 @@ summary span {
   font-weight: bold;
   margin-left: auto; /* Empuja el + a la derecha */
 }
+
+@media (max-width: 768px) {
+  summary span{
+    font-size: 0px;
+  }
+}
+
 /* img */
 .imagenes {
   margin-bottom: 50px;
