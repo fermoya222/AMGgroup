@@ -32,14 +32,14 @@ body {
     gap: 20px;
     width: 90%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 50px;  /* Márgenes superior e inferior */
+    margin-top: 20px;  /* Márgenes superior e inferior */
     margin-bottom: 100px;
     color: #cccccc;
 }
 
 .texto-fondo8 {
     position: absolute;
-    top: 110%;
+    top: 105%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centra el texto */
     font-size: 250px;  /* Tamaño grande */
@@ -52,8 +52,7 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo8 {
-      font-size: 70px; /* Ejemplo: reduces el tamaño en móviles */
-      top: 145%;
+      font-size: 0px; /* Ejemplo: reduces el tamaño en móviles */
     }
 }
 
@@ -168,6 +167,35 @@ body {
 
 @media (max-width: 768px) {
     .player-info{
+        margin-top: 0;
+    }
+}
+
+/* info dt */
+.dt-info {
+    color: #cccccc;
+    font-size: 35px;
+    margin-top: -130px;
+    margin-left: 0px;
+    text-align:left;
+    flex-wrap: wrap;
+}
+.dt-info h2, .dt-info p {
+    margin: 5px 0;
+}
+.dt-info h2 {
+    font-weight: bold;
+}
+.dt-info p span {
+    font-weight: bold;
+}
+.club-logo {
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .dt-info{
         margin-top: 0;
     }
 }

@@ -82,14 +82,13 @@ body {
 
 .texto-fondo-nosotros {
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 119%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
   font-weight: bold;
   color: rgba(71, 68, 68, 0.1);
-  z-index: 0;
   white-space: nowrap;
   user-select: none;
   max-width: 100vw; /* Evita el scroll horizontal */

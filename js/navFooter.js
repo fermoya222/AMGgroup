@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="social-icons d-flex justify-content-center">
               <a href="https://www.instagram.com/amggroup.ok/" class="me-2"><img src="img/ig.png" width="29" alt="logo-ig"></a>
               <a href="#" class="me-2"><img src="img/wsp.png" width="29" alt="logo-wsp"></a>
-              <a href="#"><img src="img/maps.png" width="29" alt="logo-maps"></a>
+              <a href="https://www.google.com/maps/place/Hotel+Quinto+Centenario/@-31.413189,-64.202814,15z/data=!4m9!3m8!1s0x9432988237cc0001:0x4cceab0d9d4d1c1b!5m2!4m1!1i2!8m2!3d-31.4131888!4d-64.2028138!16s%2Fg%2F11j4sx9g2j?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="29" alt="logo-maps"></a>
             </div>
           </div>
         </div>
