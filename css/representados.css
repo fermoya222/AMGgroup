@@ -154,8 +154,8 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo7 {
-        top: 140%;
-        font-size: clamp(30px, 15vw, 100px); /* Tamaño más cómodo en móviles */
+        top: 127%;
+        /* Tamaño más cómodo en móviles */
     }
 }
 
