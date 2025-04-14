@@ -95,11 +95,11 @@ body {
   overflow: hidden;
 }
 /* Ajuste para móviles */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .texto-fondo-nosotros {
     top: 290px;
   }
-}
+} */
 
 .texto-fondo1 {
   position: absolute;
