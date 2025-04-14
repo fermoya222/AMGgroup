@@ -23,7 +23,7 @@ body {
   height: 10px;
   object-fit: cover;
   filter: brightness(50%);
-}
+} 
 
 .hero-overlay {
   position: absolute;
