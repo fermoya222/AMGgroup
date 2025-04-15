@@ -15,12 +15,37 @@ const menuContent = `
 
         <ul class="nav-links">
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="representados.html">NUESTROS REPRESENTADOS</a></li>
+            <li class="dropdown">
+        <a href="#" class="dropdown-toggle">NUESTROS REPRESENTADOS</a>
+        <ul class="dropdown-menu">
+            <li><a href="representados.html">JUGADORES</a></li>
+            <li><a href="dts.html">DT</a></li>
+        </ul>
+    </li>
             <li><a href="nosotros.html">NOSOTROS</a></li>
             <li><a href="contacto.html" class="contact-button">CONTACTO</a></li>
         </ul>
  `;
 menu.innerHTML = menuContent;
+
+// Activar/desactivar submenú al hacer clic
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdown = document.querySelector(".dropdown");
+
+  dropdownToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      dropdown.classList.toggle("active");
+  });
+
+  // Cierra el menú si hacés clic fuera
+  document.addEventListener("click", function (e) {
+      if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove("active");
+      }
+  });
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const footerHTML = `

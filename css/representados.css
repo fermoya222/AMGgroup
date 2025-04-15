@@ -18,6 +18,7 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    margin-top: 20%
 }
 
 .slider-wrapper1 {
@@ -139,7 +140,7 @@ body {
 .texto-fondo7 {
     position: absolute;
     z-index: -1;
-    top: 153%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: clamp(50px, 15vw, 240px); /* Se adapta al ancho de la pantalla */
@@ -154,7 +155,7 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo7 {
-        top: 135%;
+        top: 13%;
         /* Tamaño más cómodo en móviles */
     }
 }
