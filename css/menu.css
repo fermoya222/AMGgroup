@@ -77,6 +77,9 @@
     border-radius: 5px;
     padding: 10px;
   }
+  .dropdown-toggle {
+    white-space: pre-line !important;
+}
 
   .nav-links.show {
     display: flex;
@@ -96,31 +99,28 @@
 /* cambios nav */
 
 /* Menú desplegable oculto por defecto */
+
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  margin-top: 10px;
-  list-style: none;
-  padding: 0;
-  border-radius: 5px;
-  z-index: 999;
-  min-width: 180px;
+  width: -webkit-fill-available;
+  background-color: black !important;
+
 }
 
 /* Items del submenú */
 .dropdown-menu li a {
   display: block;
   padding: 10px 15px;
-  color: black;
+  color: white;
   text-decoration: none;
+  text-align: center !important;
 }
 
 .dropdown-menu li a:hover {
   background-color: #f0f0f0;
 }
-
+.dropdown-toggle::after {
+  display: none !important;
+}
 /* Mostrar el submenú cuando tenga la clase "active" */
 .dropdown.active .dropdown-menu {
   display: block;
