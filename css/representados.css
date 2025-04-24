@@ -132,7 +132,7 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo6 {
-        top: 20%;
+        top: 17%;
         font-size: clamp(30px, 15vw, 100px); /* Más pequeño para móvil */
     }
 }
@@ -155,7 +155,7 @@ body {
 
 @media (max-width: 768px) {
     .texto-fondo7 {
-        top: 13%;
+        top: 17%;
         /* Tamaño más cómodo en móviles */
     }
 }
